@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Web Trivia</title>
+    <link rel="stylesheet" href="styles/styles.css">
+    <script src="scripts/quizshow.js"></script>
+</head>
+<body onload= "StartQuiz()">
+    <p>Wecome to our Quiz!</p><br><br>
+    <div id= "score-box">Score: </div>
+    
+    <h4 class= "question-box" id="questionText">What's the answer to Question #1?</h4>
+    <div class="question-box">
+        <div>
+            <input type="radio" id="answer1" class="answer-button" name="answer">
+                <label>Answer 1</label>
+            <input type="radio" id="answer2" class="answer-button" name="answer">
+                <label>Answer 2</label>
+        </div>
+        <div>
+            <input type="radio" id="answer3" class="answer-button" name="answer">
+                <label>Answer 3</label>
+            <input type="radio" id="answer4" class="answer-button" name="answer">
+                <label>Answer 4</label>
+        </div>
+        <button id= "submitBtn" onclick="SubmitAnswer()">Submit</button>
+    </div>
+
+    <div id="answer-box">
+        <p id= "answerText">-------------------------</p>
+    </div> 
+</body>
+</html>
