@@ -84,7 +84,7 @@ function SubmitAnswer()
             else {
                 alert("You've reached the end of our quiz! Please play again.")
                 questionIndex = 0;
-                SetQuestion(questions[questionIndex]);
+                SetQuestion(questions[0]);
             }
         }
         else {
